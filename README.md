@@ -9,6 +9,7 @@
  </p>
 
 ## These Builds are made by me using the oni2 docs and i have no relation to the oni2 creator
+## [Download](https://github.com/Pranjal-SB/oni2-Builds/releases/latest)
 
 ## Introduction
 
