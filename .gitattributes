@@ -1,0 +1,42 @@
+# Declare shell files to have LF endings on checkout
+# On Windows, the default git setting for `core.autocrlf`
+# means that when checking out code, LF endings get converted
+# to CRLF. This causes problems for shell scripts, as bash
+# gets choked up on the extra `\r` character.
+*.sh text eol=lf
+
+# Windows executables
+*.exe      binary
+
+# Archives
+*.7z       binary
+*.gz       binary
+*.tar      binary
+*.tgz      binary
+*.zip      binary
+
+# Linguist override
+*.re linguist-language=Reason
+*.rei linguist-language=Reason
+
+# Hide lockfile updates
+*esy.lock/* linguist-generated
+
+# Hide vendored extension code
+extensions/** linguist-generated
+
+# Hide vendored code
+vendor/** linguist-vendored
+
+# Hide large integration test file
+integration_test/large-c-file.c linguist-generated
+
+# Hide vendored sqlite
+bench/reason-treesitter/sqlite3.c linguist-vendored
+
+# Hide large bench files
+bench/collateral/* linguist-vendored
+
+# Test files
+integration_test/test.crlf text eol=crlf
+integration_test/test.lf text eol=lf

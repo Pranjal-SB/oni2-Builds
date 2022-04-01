@@ -1,0 +1,30 @@
+{
+  "source": "./package.json",
+  "scripts": {
+    "run": "esy '@test' x OniUnitTestRunner",
+    "run-ci": "esy '@test' x OniUnitTestRunnerCI",
+    "core": "esy '@test' x OniUnitTestRunnerCore",
+    "cli": "esy '@test' x OniUnitTestRunnerCLI",
+    "libvim": "esy '@test' x OniUnitTestRunnerLibvim",
+    "model": "esy '@test' x OniUnitTestRunnerModel",
+    "exthost": "esy '@test' x OniUnitTestRunnerExtHost",
+    "textmate": "esy '@test' x OniUnitTestRunnerTextmate",
+    "service_net": "esy '@test' x OniUnitTestRunnerServiceNet",
+    "service_extensions": "esy '@test' x OniUnitTestRunnerServiceExtensions",
+    "watch": "esy '@test' dune build --watch --root . -j4",
+    "inline": "esy b dune runtest",
+    "watch:inline": "esy b dune runtest --watch"
+  },
+  "override": {
+    "build": [
+      "dune build -p libvim,textmate,treesitter,Oni2,OniUnitTestRunner,vterm -j4"
+    ],
+    "dependencies": {
+      "@reason-native/rely": "^3.2.1"
+    },
+    "install": [
+      "esy-installer #{self.target_dir}/default/Oni2.install",
+      "esy-installer #{self.target_dir}/default/OniUnitTestRunner.install"
+    ]
+  }
+}
