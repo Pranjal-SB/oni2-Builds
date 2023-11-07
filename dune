@@ -1,6 +1,0 @@
-(dirs src test integration_test bench assets vendor)
-
-(install
- (section bin)
- (package Oni2)
- (files package.json CHANGES_CURRENT.md CHANGES.md))
