@@ -8,8 +8,8 @@
   <img width="800" alt="Onivim 2" src="https://user-images.githubusercontent.com/13532591/109881233-c88cad80-7c2c-11eb-83a1-67a7adcbbd7e.png">
  </p>
 
-## These Builds are made by me using the oni2 docs and i have no relation to the oni2 creator
-## [Download](https://github.com/Pranjal-SB/oni2-Builds/releases/latest)
+## These Builds are made by me using the oni2 docs for my own personal use & I have no relation to the oni2 creator 
+##  But if you want to **Test** it out, [Download](https://github.com/Pranjal-SB/oni2-Builds/releases/latest)
 
 ## Introduction
 
