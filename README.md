@@ -1,5 +1,5 @@
 # Onivim 2
-
+> The project is ded btw [link](https://github.com/onivim/oni2/issues/3811#issuecomment-910306404)
 ### Lightweight, Modal Code Editor
 
 :warning: Currently in alpha - may have bugs or instability - use with caution :warning: 
